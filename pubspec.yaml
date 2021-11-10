@@ -1,6 +1,6 @@
 name: multi_image_viewer
 description: Widgets for displaying multiple images (and other widgets) in a single screen viewer.
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/tudutu/multi-image-viewer
 
 environment:
