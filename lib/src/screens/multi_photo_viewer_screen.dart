@@ -127,7 +127,8 @@ class _MultiPhotoViewerScreenState extends State<MultiPhotoViewerScreen> {
           widget: CustomPhotoView(
             heroTag: widget.heroTags != null ? widget.heroTags![index] : null,
             imageProvider: image,
-            primaryImageColor: _pageColors[index],
+            // Transparent background on the PhotoView itself
+            primaryImageColor: const Color(0x00000000),
             scaleStateChangedCallback: (index, isZooming) {
               if (index == 0 && isZooming == false) {
                 widgetViewerKey.currentState!.showControls();
